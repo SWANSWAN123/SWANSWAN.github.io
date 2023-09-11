@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
  <head>
@@ -8,6 +9,8 @@ a:link {color:blue;}
 a:visited {color:green;}    
 a:hover {color:orange;}  
 a:active {color:#0000FF;}
+
+
 p{
 line-height:1.6em;
 text-indent:10em;
@@ -20,13 +23,14 @@ text-indent:10em;
     height: 50%;
 }
  body {
- font-size:30px;
- margin-top:100px;
-	margin-bottom:100px;
-	margin-right:100px;
-	margin-left:100px;
- font-style:oblique;
-	background-color:#d0e4fe;
+    background-color:#fad3d3;
+    font-size: 30px;
+    margin-top: 100px;
+	margin-bottom: 100px;
+	margin-right: 100px;
+	margin-left: 100px;
+    font-style:oblique;
+	background-size:1000px 800px;
 }
 .but{
  border-radius: 12px;
@@ -61,12 +65,18 @@ margin-left:20px;
 .link:hover{
 color:red
 }
- 
- 
+a{
+color:red;
+size:20px;
+}
+ .c{
+display: flex;
+
+}
   </style>
 <script language="javascript">
 function sing1(){
-            const music = new Audio("ltx.mp4");
+            const music = new Audio("ltx.mp3");
 		   
 			var r=confirm("准备好了吗？");
 		       
@@ -74,13 +84,7 @@ function sing1(){
 		   if(r){
 				music.play(); }
 }
-function sing2(){
-
-          
-            const music = new vedio("bgm.mp4");
-			music.loop=false;
-		      music.play();
-}
+ 
 
  
 </script>
@@ -108,24 +112,25 @@ function sing2(){
 	<summary><strong>海贼王图片</strong></summary>
 	<figure> 
 	<img src="hzw1.jpg" width="380" height="550" align-"cneter" alt="海贼王">
-	<img src="hzw2.jpg" width="400" height="550" align-"cneter" alt="海贼王">
-	<img src="hzw3.jpg" width="400" height="550" align-"center" alt="海贼王">
+	<img src="hzw2.jpg" width="380" height="550" align-"cneter" alt="海贼王">
+	<img src="hzw3.jpg" width="380" height="550" align-"center" alt="海贼王">
 	</figure> 
 	</details>
 
  <video src="me.mp4" hidden width="400px" height="300px" id="me" controls="controls"  loop="false";>  </video>
        <p>我喜欢唱歌，最喜欢的歌手是周杰伦。请欣赏我的翻唱兰亭序：
 	   <input type="button" class="but" value="点击欣赏" onclick="javascript:sing1()"/></p>
-	   
-	  
-	  
-	  <p>自我介绍完毕。 最后想说一句：莉姐笑起来太好看了！！	
+	   <p>我喜欢看韩剧，莉姐喜欢看韩剧吗？我最喜欢的韩剧是步步惊心丽。如果你也看过，那么我认为你是我的姐妹。来个超链接吧。 
+	   <a href="https://v.douyin.com/ieU7P6xk/"><cite> 对不起，留你一个人在那</cite></a> </p>
+	  <p>啊啊啊啊冲啊所有人都去看！！！！！</p>
+	  <p>自我介绍完毕。 最后想说一句：莉姐笑起来太好看了！！</p>	
 	 
 </h3>	
  </article>
   
 	  <footer> 
-	   <button onclick="javascript:sing1()"><small><cite> 再听一遍 </cite></small></button> 
+	  <div id="c">
+	   <button onclick="javascript:sing1()" ><small><cite> 再听一遍静静唱的歌 </cite></small></button>   </div>
 	  </footer>
  </body>
 </html>
